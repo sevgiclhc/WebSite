@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="headerDiv" class="header">
+        <div onclick="toggle()" class="mobileIcon">
+            <img src="icon.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="1.jpg" alt="">
+        </div>
+        <div id="navDiv" class="mobileLinkDisplay">
+            <div class="mobileLink">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <img src="banner.jpg" alt="">
+        <div class="manşet">
+            <h3>Efsane Banner</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptatem dicta eum magnam enim, fugit accusantium amet explicabo minus, dolor expedita ullam est molestias nam similique exercitationem mollitia reprehenderit doloribus?</p>
+        </div>
+    </div>
+    <div class="imgParent">
+        <div class="imgKart">
+            <img src="4.jpg"  height="160px" alt="">
+            <h3>Html</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat enim, quas non modi maiores, ducimus laudantium, assumenda amet necessitatibus reiciendis architecto. Veniam, non? Facere voluptatem consequatur quisquam voluptatibus! Ratione, quod?
+            </p>
+        </div>
+    
+        <div class="imgKart">
+            <img src="2.jpg" height="160px" alt="">
+            <h3>Css</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat enim, quas non modi maiores, ducimus laudantium, assumenda amet necessitatibus reiciendis architecto. Veniam, non? Facere voluptatem consequatur quisquam voluptatibus! Ratione, quod?
+            </p>
+        </div>
+    
+        <div class="imgKart">
+            <img src="5.jpg" height="160px" alt="">
+            <h3>React.js</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat enim, quas non modi maiores, ducimus laudantium, assumenda amet necessitatibus reiciendis architecto. Veniam, non? Facere voluptatem consequatur quisquam voluptatibus! Ratione, quod?
+            </p>
+        </div>
+    
+        <div class="imgKart">
+            <img src="3.jpg" height="160px" alt="">
+            <h3>Bootstrap</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat enim, quas non modi maiores, ducimus laudantium, assumenda amet necessitatibus reiciendis architecto. Veniam, non? Facere voluptatem consequatur quisquam voluptatibus! Ratione, quod?
+            </p>
+        </div>
+    
+    </div>
+
+    <form class="formgeneral">
+        <label>Ad</label> 
+        <input class="formElement" type="text" name="firstname"
+        placeholder="Adınızı Giriniz">
+
+        <label>SoyAd</label> 
+        <input class="formElement" type="text" name="lasttname"
+        placeholder="SoyAdınızı Giriniz">
+
+        <label for="country">Ülke</label>
+        <select class="formElement" name="country">
+            <option value="tr">Türkiye</option>
+            <option value="ar">Arabic</option>
+            <option value="en">England</option>
+        </select>
+        <input class="btnSubmit" type="submit" value="Kaydet">
+    </form>
+
+    <footer class="footer">
+        <h3> FrontEnd && Tüm Hakları Saklıdır.</h3>
+    </footer>
+
+    <script>
+        function toggle() {
+            let x = document.getElementById("navDiv");
+            let y = document.getElementById("headerDiv");
+            if (x.style.display === "none") {
+                x.style.display = "block" ;
+                y.style.height = "auto" ;
+            }
+            else {
+                x.style.display = "none"
+            }
+
+        }
+    </script>
+
+</body>
+</html>
